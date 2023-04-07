@@ -1,1 +1,2 @@
 # F-CRAIG
+In this project, we propose an approach to speedup CRAIG by using the concept of Forgetting Events. Forgetting event is an event when an individual training example transitions from being classified correctly to incorrectly over the course of training. Data points are pruned based on their Forgetting Events score and then CRAIG is applied on the pruned data set to find ideal weighted subset. The idea is that calculating CRAIG on a smaller dataset will provide speedup while expecting little drop in accuracy as data points which are learnt by the model are dropped.
